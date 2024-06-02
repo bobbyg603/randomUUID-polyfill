@@ -1,0 +1,25 @@
+{
+  "name": "randomuuid-polyfill",
+  "version": "1.0.0",
+  "description": "ESM compatible randomUUID polyfill",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobbyg603/randomUUID-polyfill.git"
+  },
+  "keywords": [
+    "polyfill",
+    "crypto",
+    "globalThis",
+    "randomUUID"
+  ],
+  "author": "@bobbyg603",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bobbyg603/randomUUID-polyfill/issues"
+  },
+  "homepage": "https://github.com/bobbyg603/randomUUID-polyfill#readme"
+}
