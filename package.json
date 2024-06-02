@@ -2,7 +2,7 @@
   "name": "randomuuid-polyfill",
   "version": "1.0.0",
   "description": "ESM compatible randomUUID polyfill",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
     "test": "node --test"
   },
