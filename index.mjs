@@ -1,5 +1,5 @@
 // Adapted from https://stackoverflow.com/a/8809472/2993077
-if (typeof globalThis.crypto === 'undefined' || !globalThis.crypto.randomUUID) {
+if (!globalThis.crypto?.randomUUID) {
     if (!globalThis.crypto) {
         globalThis.crypto = {};
     }
@@ -7,7 +7,7 @@ if (typeof globalThis.crypto === 'undefined' || !globalThis.crypto.randomUUID) {
     globalThis.crypto.randomUUID = () => {
         let
             d = new Date().getTime(),
-            d2 = ((typeof performance !== 'undefined') && performance.now && (performance.now() * 1000)) || 0;
+            d2 = (performance?.now && (performance.now() * 1000)) || 0;
         return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
             let r = Math.random() * 16;
             if (d > 0) {
